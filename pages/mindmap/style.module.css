@@ -1,0 +1,53 @@
+.parent {
+  width: 100%;
+  height: 100vh;
+  background: url('/3_bg.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.gridBox{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  gap: 10px;
+  align-content: space-between;
+}
+.item{
+  padding: 40px;
+  background: rgba(255,182,193,0.3);
+}
+.itemActive{
+  padding: 40px;
+  background: rgba(255,182,193,0.9);
+}
+
+.scrolldiv{
+  position: relative;
+  padding: 40px 0;
+  -webkit-mask-image: linear-gradient(to right, black 30%, transparent 100%);
+  mask-image: linear-gradient(to right, black 30%, transparent 100%);
+
+}
+
+.scrolldiv::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+  background-color: transparent;
+}
+
+.scrolldiv::-webkit-scrollbar-thumb {
+  background: lightgray;
+  height: 2px;
+}
+/* .blurDiv{
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  right: 1px;
+  background: rgba(0, 0, 0, 0.9);
+} */
+
+@media all and (max-width: 800px) {
+
+}

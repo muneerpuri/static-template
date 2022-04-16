@@ -1,0 +1,14 @@
+
+.navItem{
+    padding: 10px;
+    text-transform: uppercase;
+}
+.active{
+    background:rgba(255,255,255, 0.6);
+    backdrop-filter: saturate(180%) blur(10px);
+    border: 2px solid white;
+    padding: 10px;
+    text-transform: uppercase;
+    border-radius: 10px;
+    margin: 10px;
+}

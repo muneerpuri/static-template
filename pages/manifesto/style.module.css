@@ -1,0 +1,15 @@
+.parent {
+    width: 100%;
+    height: 100vh;
+    background: url('/5_bg.png');
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;
+  }
+  
+  @media all and (max-width: 800px) {
+    .parent {
+        background: none;
+    }
+  }
+  

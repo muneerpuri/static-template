@@ -1,0 +1,38 @@
+.parent{
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    z-index: 10;
+    display: flex;
+    overflow: hidden;
+}
+.menu{
+    width: 70%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.9);
+}
+.menuoff{
+    width: 30%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.logobox{
+    padding: 10px ;
+    margin-bottom: 20px;
+}
+.navlinks{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.navLink{
+    display: block;
+    padding: 10px;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: white;
+    display: block;
+    width: 100%;
+}

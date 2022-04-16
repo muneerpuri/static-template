@@ -1,0 +1,19 @@
+.parent{
+  width: 100%;
+  height: 100vh;
+  background: url("/1_bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+/* .contentBox{
+  widt
+  padding: ;
+} */
+
+@media all and (max-width:800px){
+
+  .parent{
+    background: none;
+  }
+}

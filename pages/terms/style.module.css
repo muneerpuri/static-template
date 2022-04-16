@@ -1,0 +1,11 @@
+.parent {
+    width: 100%;
+    height: 100vh;
+    background: url('/6_bg.png');
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
