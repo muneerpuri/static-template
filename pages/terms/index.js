@@ -13,7 +13,7 @@ function Terms() {
       <Navbar />
       {showSideBar && <SidebarDrawer />}
 
-      <div style={{height:"500px"}} className="w-11/12 md:w-1/2 m-auto flex flex-col items-start justify-start overflow-y-scroll px-9 md:px-16">
+      <div style={{height:"500px"}} className={`w-11/12 md:w-1/2 m-auto flex flex-col items-start justify-start overflow-y-scroll px-9 md:px-16 ${style.scrollDiv}`}>
         <p className="py-9 font-bold">TERMS</p>
         <p className="py-2 font-light">
           LOREM IPSUM DOLOR SIT AM ET, CONSECTETUR ADIPISCING ELIT. AT ZENO EUM
