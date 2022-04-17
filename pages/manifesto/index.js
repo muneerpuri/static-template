@@ -64,7 +64,7 @@ function Manifesto() {
           backgroundPosition: 'center',
           backgroundSize: 'contain',
         }}
-        className="md:hidden mt-20"
+        className="md:hidden "
       ></div>
 
 <div className="flex md:float-right m-auto w-11/12 md:w-1/2 items-center justify-center ">

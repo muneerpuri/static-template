@@ -16,9 +16,9 @@ function Roadmap() {
       {showSideBar && <SidebarDrawer />}
       <FloatingIcons />
       <Navbar />
-      <div className='mt-24 md:hidden '>
+      {/* <div className='mt-24 md:hidden '>
 
-      </div>
+      </div> */}
       <div
         className="md:hidden "
       >
