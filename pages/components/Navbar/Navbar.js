@@ -16,9 +16,10 @@ function Navbar() {
         <div className={"hidden md:flex justify-between items-center"}>
           {console.log(router.pathname)}
             <Link  href="/"><a className={ router.pathname == "/"  || router.pathname == "/home" ? classes.active : classes.navItem}>home</a></Link>
-            <Link  href="/team"><a className={router.pathname == "/team" ? classes.active : classes.navItem}>team</a></Link>
-            <Link  href="/manifesto"><a className={router.pathname == "/manifesto" ? classes.active : classes.navItem}>manifesto</a></Link>
-            <Link  href="/mindmap"><a className={router.pathname == "/mindmap" ? classes.active : classes.navItem}>mindmap</a></Link>
+            <Link  href="/team"><a className={router.pathname == "/team" || router.pathname == "/"  || router.pathname == "/home" ? classes.active : classes.navItem}>team</a></Link>
+            <Link  href="/manifesto"><a className={router.pathname == "/manifesto"||router.pathname == "/"  || router.pathname == "/home"  ? classes.active : classes.navItem}>manifesto</a></Link>
+            <Link  href="/mindmap"><a className={router.pathname == "/mindmap" || router.pathname == "/"  || router.pathname == "/home"  ? classes.active : classes.navItem}>mindmap</a></Link>
+            <Link  href="/roadmap"><a className={router.pathname == "/roadmap" || router.pathname == "/"  || router.pathname == "/home"  ? classes.active : classes.navItem}>roadmap</a></Link>
         </div>
       
 

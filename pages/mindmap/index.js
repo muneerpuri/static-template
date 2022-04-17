@@ -8,7 +8,22 @@ import { AuthContext } from '../../context/AuthContext'
 import FloatingIcons from '../components/FloatingIcons/FloatingIcons'
 
 function Manifesto() {
+  function touching(object1, object2) {
+    var object1LeftSide = object1.offsetLeft;
+    var object1RightSide = object1.offsetLeft + object1.offsetWidth;
+    var object1TopSide = object1.offsetTop;
+    var object1BottomSide = object1.offsetTop + object1.offsetHeight;
 
+    var object2LeftSide = object2.offsetLeft;
+    var object2RightSide = object2.offsetLeft + object2.offsetWidth;
+    var object2TopSide = object2.offsetTop;
+    var object2BottomSide = object2.offsetTop + object2.offsetHeight;
+
+    var objectsTouchingHorizontally = object1RightSide >= object2LeftSide && object1LeftSide <= object2RightSide;
+    var objectsTouchingVertically = object1BottomSide >= object2TopSide && object1TopSide <= object2BottomSide;
+
+    return objectsTouchingHorizontally && objectsTouchingVertically;
+}
   const { showSideBar } = React.useContext(AuthContext)
   return (
     <div className={styles.parent}>
@@ -40,14 +55,8 @@ function Manifesto() {
           <div onScroll={(e)=>{
             let cards  = document.querySelectorAll(".cardData");
             // cards.forEach((el,index)=>{
-            //   let position = el.getBoundingClientRect()
               
-            //   if(window.pageXOffset + window.innerHeight >) {
-            //     console.log('Element is fully visible in screen'+index);
-            //   }
-            //   if(position.top < window.innerHeight && position.bottom >= 0) {
-            //     console.log('Element is partially visible in screen'+index);
-            //   }
+            //   touching()
             // })
           }} className={`overflow-x-auto flex ${styles.scrolldiv}`}>
             <div className={styles.blurDiv}> </div>

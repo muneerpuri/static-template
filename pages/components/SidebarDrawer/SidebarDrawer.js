@@ -16,6 +16,7 @@ function SidebarDrawer() {
             <Link  href="/team"><a className={styles.navLink}>team</a></Link>
             <Link  href="/manifesto"><a className={styles.navLink}>manifesto</a></Link>
             <Link  href="/mindmap"><a className={styles.navLink}>mindmap</a></Link>
+            <Link  href="/roadmap"><a className={styles.navLink}>roadmap</a></Link>
 
             </div>
 

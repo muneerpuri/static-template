@@ -2,11 +2,16 @@
 .navItem{
     padding: 10px;
     text-transform: uppercase;
+    border: 2px solid transparent;
+    padding: 10px;
+    text-transform: uppercase;
+    border-radius: 10px;
+    margin: 10px;
 }
 .active{
-    background:rgba(255,255,255, 0.6);
-    backdrop-filter: saturate(180%) blur(10px);
-    border: 2px solid white;
+    background:rgba(236, 236, 236, 0.5);
+    /* backdrop-filter: saturate(180%) blur(10px); */
+    border: 2px solid rgba(236, 236, 236, 0.5);
     padding: 10px;
     text-transform: uppercase;
     border-radius: 10px;
