@@ -19,11 +19,15 @@ function Roadmap() {
       {/* <div className='mt-24 md:hidden '>
 
       </div> */}
-      <div
+
+<div className="h-fit md:hidden pt-24 md:pt-0 ">
+        <img src="/mobile_3_bg.png" alt="" className=" h-4/6" />
+      </div>
+      {/* <div
         className="md:hidden "
       >
         <img src="/mobile_3_bg.png" alt="" className='mobile-bg'/>
-      </div>
+      </div> */}
 
       <div className=" m-auto flex w-11/12 items-center justify-center py-9 md:h-screen md:w-10/12 md:py-0">
         <div className="w-full md:w-1/2">

@@ -54,18 +54,20 @@ function Manifesto() {
           <p className='py-2'>CONSUETUDO LATINA TRADUCERET</p>
         </div>
       </div> */}
-
-      <div
+      <div className="h-fit md:hidden pt-24 md:pt-0 ">
+        <img src="/mobile_5.png" alt="" className=" h-4/6" />
+      </div>
+      {/* <div
         style={{
           minHeight: '300px',
           background: "url('/mobile_5.png')",
           // backgroundAttachment: 'fixed',
           backgroundRepeat: 'no-repeat',
-          backgroundPosition: 'center',
+          backgroundPosition: 'bottom',
           backgroundSize: 'contain',
         }}
-        className="md:hidden "
-      ></div>
+        className="md:hidden  "
+      ></div> */}
 
 <div className="flex md:float-right m-auto w-11/12 md:w-1/2 items-center justify-center ">
         <div className="flex flex-col mb-9 md:mb-0 md:mt-28 items-start justify-start px-6 break-words">
