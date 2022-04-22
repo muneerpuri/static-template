@@ -8,10 +8,11 @@ import styles from './style.module.css'
 
 function Roadmap() {
   const { showSideBar } = React.useContext(AuthContext)
-  
+  const containerRef = React.useRef(null)
  
 
   return (
+   
     <div className={styles.parent}>
       {showSideBar && <SidebarDrawer />}
       <FloatingIcons />
@@ -30,7 +31,7 @@ function Roadmap() {
       </div> */}
 
       <div className=" m-auto flex w-11/12 items-center justify-center py-9 md:h-screen md:w-10/12 md:py-0">
-        <div className="w-full md:w-1/2">
+        <div className="w-full md:w-2/5">
 
         <p className="py-4 font-bold">ROADMAP</p>
           <div className="form-check flex items-center justify-start">
@@ -144,6 +145,19 @@ function Roadmap() {
               <div> &gt; Lorem ipsum dolor sit amet</div>
             </div>
           </div>
+        </div>
+        <div className='w-full hidden md:flex h-4/6 justify-end items-center p-2' >
+
+          <div className={`flex justify-start items-center parent-slider ${styles.parentSlider}`}>
+            <div className={`flex  justify-start items-center inner-slider ${styles.innerSlider}`}>
+                <img src="/3-image_1.png" alt=""/>
+                <img src="/3-image_2.jpg" alt=""/>
+                <img src="/3-image_3.png" alt=""/>
+                <img src="/3-image_4.png" alt=""/>
+            </div>
+
+          </div>
+          
         </div>
        
       </div>
